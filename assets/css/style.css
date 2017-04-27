@@ -1,0 +1,158 @@
+body {
+	background: white;
+}
+
+.blockquote {
+	border-left: 0;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 3rem;
+}
+
+.blockquote p::before{
+	content: open-quote;
+	font-size: 60pt;
+	text-align: center;
+	float: left;
+	line-height: 25px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.blockquote p::after{
+	content: close-quote;
+	font-size: 60pt;
+	text-align: center;
+	line-height: 25px;
+	position: relative;
+	float: right;
+}
+
+.blockquote-footer {
+  display: block;
+  font-size: 80%;
+  color: #636c72;
+}
+
+.blockquote-footer::before {
+  content: "\2014 \00A0";
+}
+
+.carousel-indicators li {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-indicators .active {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+#carouselApplications {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.jumbotron {
+	background-image: url(../img/jumbotron.jpeg);
+	background-size: cover;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+#header {
+	background-color: rgba(255,255,255,0.25);
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #FFC915;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	background: #66c2ff;
+	border-radius: 5px;
+}
+
+#clockdiv > h1 {
+	display: block;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.1em;
+	-webkit-margin-start: 10px;
+	-webkit-margin-end: 10px;
+	font-weight: bold;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	display: inline-block;
+	background: #1aa3ff;
+	-webkit-margin-end: 5px;
+	-webkit-margin-after: 5px;
+	border-radius: 3px;
+}
+
+#clockdiv div > span{
+	border-radius: 3px;
+	background: #007acc;
+	display: inline-block;
+}
+
+#clockdiv .smalltext{
+	padding-top: 5px;
+}
+
+
+@media (max-width: 575px) {
+	
+	.blockquote p::after{
+		content: "";
+	}
+	#clockdiv{
+		font-size: 20px;
+	}
+	
+	#clockdiv > h1 {
+		font-size: 1em;
+	}
+
+	#clockdiv div > span{
+		padding: 10px;
+	}
+
+	#clockdiv .smalltext{
+		font-size: 12px;
+		font-weight: bold;
+	}
+}
+
+@media (min-width: 576px) {
+
+	#clockdiv{
+		font-size: 30px;
+	}
+
+	#clockdiv > h1 {
+		font-size: 1.5em;
+	}
+
+	#clockdiv div > span{
+		padding: 15px;
+	}
+
+	#clockdiv .smalltext{
+		font-size: 16px;
+	}
+}
